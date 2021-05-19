@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tw Mods</title>
+</head>
+
+<body
+    style="padding:0; margin:0; background-image: url(https://media.innogamescdn.com/TribalWars/wallpapers/desktop/TribalWarsWallpaper_1_1920x1200.jpg); background-repeat: no-repeat; background-position: center;background-attachment: fixed; background-size: 100% 100%; font-size: 18px; font-family:Verdana, Arial, Helvetica, sans-serif">
+    <div style="width:900px; margin: 20px auto; background-color: whitesmoke; padding:30px">
+        <div style="display: block; text-align: center;">
+            <p style="font-size: 2rem;">
+                TwMods
+            </p>
+            <p style="font-size: 1.1rem;">
+                Projekt zawiera elementy <strong>niezgodne</strong> z regulaminem gry TribalWars.
+            </p>
+            <p style="font-size: 0.9rem;">
+                Korzystając z funkcjonalności jakie dostarcza akceptujesz ryzyko blokady konta jak i zrzekasz się
+                roszczeń wobec twórcy w przypadku utraty konta wskutek blokady.
+            </p>
+            <hr />
+            <p>
+                Do poprawnego działania wymagany jest manager skryptów.
+            </p>
+            <p>
+                <a href="https://www.tampermonkey.net/">Tamper Monkey</a>
+            </p>
+            <p>
+                Input:
+            </p>
+            <p style="text-align: left; font-size: 0.7rem; width:70%; margin: auto; background-color: #fff; padding:10px">
+                <code>// ==UserScript== <br/></code>
+                
+                <code>// @name         TwMods<br/></code>
+                <code>// @author       Klaku<br/></code>
+                <code>// @match        https://*.plemiona.pl/game.php*<br/></code>
+                <code>// @icon         https://www.google.com/s2/favicons?domain=plemiona.pl<br/></code>
+                <code>// @grant        none<br/></code>
+                <code>// ==/UserScript==<br/></code>
+                <br/>
+                <code>(function() {<br/></code>
+                    <code style="margin-left:20px">var element = document.createElement('script');<br/></code>
+                    <code style="margin-left:20px">$.get('http://localhost:8080/script').then(response=>{element.innerHTML = response; document.body.appendChild(element)});<br/></code>
+                    <code>})();<br/></code>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

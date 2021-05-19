@@ -1,0 +1,30 @@
+{
+  "name": "twmods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist\\server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klaku/TwMods.git"
+  },
+  "author": "Klaku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Klaku/TwMods/issues"
+  },
+  "homepage": "https://github.com/Klaku/TwMods#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jquery": "^3.5.5",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
